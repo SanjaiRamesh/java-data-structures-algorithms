@@ -1,7 +1,7 @@
 # Java Data Structures & Algorithms
 
 This repository contains my structured preparation for Data Structures and Algorithms 
-focused on coding interviews (Google, Microsoft, product-based companies).
+focused on coding interviews.
 
 ## Topics Covered
 
