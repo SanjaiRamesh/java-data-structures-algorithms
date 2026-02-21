@@ -1,5 +1,12 @@
 package array;
 
+/**
+ * Problem: Remove Duplicates from Sorted Array
+ * Pattern: Two Pointers
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
