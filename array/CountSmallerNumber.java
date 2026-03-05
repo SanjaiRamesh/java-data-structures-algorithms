@@ -31,7 +31,7 @@ public class CountSmallerNumber {
             temp[i] = nums[i];
         }
         Arrays.sort(temp);
-        //Map<Integer,Integer> map= new HashMap<>();
+        //Map<Integer,Integer> map.md= new HashMap<>();
         int[] ans= new int[nums.length];
         int j=0;
         for(int n:nums){
