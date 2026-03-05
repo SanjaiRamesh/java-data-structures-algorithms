@@ -23,6 +23,8 @@ Output: 4
 
 public class LargestRectangleInHistogram {
 
+
+
     public int largestRectangleArea(int[] heights) {
 
         Stack<Integer> stack = new Stack<>();
@@ -37,6 +39,9 @@ public class LargestRectangleInHistogram {
                 int height = heights[stack.pop()];
                 // If stack is empty, the width extends to the start of the array
                 int width = stack.isEmpty() ? i : i - stack.peek() - 1;
+                // right -left +1==> (i-1) - (peek+1) +1 ==>i -1 -peek -1 +1 ==> i-peek -1
+                // stack empty case, no peek:
+                // right -left +1==> (i-1) - (0) +1 ==>i
                 maxArea = Math.max(maxArea, height * width);
             }
             stack.push(i);
@@ -44,6 +49,11 @@ public class LargestRectangleInHistogram {
 
         return maxArea;
 
+    }
+
+    static void main(String[] args) {
+        LargestRectangleInHistogram lr = new LargestRectangleInHistogram();
+        System.out.println(lr.largestRectangleArea(new int[]{2, 1, 5, 6, 2, 3}));
     }
 
 }
